@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="Dashboard/base::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Welcome To TeamAce</title>
+	<link rel="stylesheet" href="" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+<section>
+	<!-- Start video Background -->
+	<div class="remove-margin">
+		<div class="vid-parent">
+			<video playsinline autoplay muted loop>
+				<source src="videos/dashboard.mp4" type="video/mp4">
+			</video>
+			<div class="vid-overlay"></div>
+		</div>
+		<div class="container-fluid vid-content">
+			<h1 class="my-content">Welcome to Erp By Team Ace</h1>
+			<small class="my-content">Quality Erp at Your Service</small><br /><br />
+			<a th:href="@{/login}" class="btn btn-outline-danger">Get Started</a>
+		</div>
+	</div>
+	<!-- End video Background -->
+
+<!--	&lt;!&ndash; Start Text Banner &ndash;&gt;-->
+<!--	<div class="container-fluid custom-bg txt-banner">-->
+<!--		<div class="row bottom-banner">-->
+<!--			<div class="col-sm">-->
+<!--				<h5><i class="fas fa-users mr-3"></i>223+ All Staff</h5>-->
+<!--			</div>-->
+<!--			<div class="col-sm">-->
+<!--				<h5><i class="fas fa-university"></i>4 CAMPUSES</h5>-->
+<!--			</div>-->
+<!--			<div class="col-sm">-->
+<!--				<h5><i class="fas fa-certificate mr-3"></i>104 Degree Programs</h5>-->
+<!--			</div>-->
+<!--			<div class="col-sm">-->
+<!--				<h5><i class="fas fa-user-graduate mr-3"></i>13000 Enroll Students</h5>-->
+<!--			</div>-->
+<!--			<div class="col-sm">-->
+<!--				<h5><i class="far fa-address-card mr-3"></i>223 PHD Faculty</h5>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	&lt;!&ndash; End Text Banner &ndash;&gt;-->
+
+<!--	&lt;!&ndash; Start Social Follow &ndash;&gt;-->
+	<div class="container-fluid custom-bg mt-5">
+		<div class="row text-white text-center p-1">
+			<div class="col-sm">
+				<a style="text-decoration: none;" class="text-white social-hover" href="#"><i
+						class="fab fa-facebook-f"></i> Facebook</a>
+			</div>
+			<div class="col-sm">
+				<a style="text-decoration: none;" class="text-white social-hover" href="#"><i
+						class="fab fa-twitter"></i> Twitter</a>
+			</div>
+			<div class="col-sm">
+				<a style="text-decoration: none;" class="text-white social-hover" href="#"><i
+						class="fab fa-whatsapp"></i> Whatsapp</a>
+			</div>
+		</div>
+	</div>
+	<!-- End Social Follow -->
+
+	<!-- Start About Section -->
+	<div class="container-fluid p-4 about-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm">
+					<h5>About Us</h5>
+					<p class="description">Bunch of Friends Who Have Set Sail to Get Ace in Everything.</p>
+				</div>
+				<div class="col-sm">
+					<h5>Team</h5>
+					<a class="text-dark" href="#">Lakshya Sharma </a><br />
+					<a class="text-dark" href="#">Akshat Sharma</a><br />
+					<a class="text-dark" href="#">Aryan Khandelwal</a><br />
+					<a class="text-dark" href="#">Himek Saini</a><br />
+					<a class="text-dark" href="#">Kuldeep Mudgal</a><br />
+					<a class="text-dark" href="#"></a><br />
+					<a class="text-dark" href="#"></a><br />
+				</div>
+				<div class="col-sm">
+					<h5>Contact Us</h5>
+					<p>ERP<br /> sharmalakshya107@gmail.com <br />Phone: 9680135372</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About Section -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container text-center">
+			<small>Copyright &copy; 2024 || Designed By Lakshya</small>
+		</div>
+	</footer>
+</section>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="Authinticationfields/base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<section>
+    <div class="container form-container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 mt-3">
+                <div class="card">
+                    <div class="card-header custom-bg text-center text-RED">Login Here</div>
+                    <div class="card-body bg-Dark">
+                        <div class="container text-center mb-3">
+                            <img style="width: 180px; height: 180px;" th:src="@{/images/logo.gif}" />
+                        </div>
+                        <div th:if="${param.error}" class="alert alert-danger">
+                            Invalid Username And Password
+                        </div>
+                        <div th:if="${param.logout}" class="alert alert-success">
+                            You have been logged out successfully
+                        </div>
+                        <form id="login-form" th:action="@{/login}" method="post">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input name="username" placeholder="Email" required autofocus type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input name="password" placeholder="Password" required type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <a class="text-center d-block mb-3" th:href="@{/signup/}">If not registered click here</a>
+                            <div class="container text-center">
+                                <button type="submit" class="btn btn-outline-success mb-3 custom-bg text-black">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
